@@ -43,6 +43,17 @@ class MyInfoPage(PublicPage):
     resid_updatepwd_relpwd = "com.dbljoy.lottery:id/edit_re_pwd"   #修改密码-第二遍密码
     resid_updatepwd_commit_button = "com.dbljoy.lottery:id/btn_save_pwd"   #修改密码-提交按钮    
     
+    resid_myinfo_exit_button = "com.dbljoy.lottery:id/text_exitlogin"   #退出登录按钮
+     
+    resposition_cancel_x1 = 133   # 133 691 249 744 取消按钮
+    resposition_cancel_y1 = 691
+    resposition_cancel_x2 = 249
+    resposition_cancel_y2 = 744
+    resposition_confirm_x1 = 462   #462 695 576  741 确认按钮
+    resposition_confirm_y1 = 695
+    resposition_confirm_x2 = 576
+    resposition_confirm_y2 = 741
+    
     resid_my_button = "com.dbljoy.lottery:id/my"  #我的页面按钮
 
 

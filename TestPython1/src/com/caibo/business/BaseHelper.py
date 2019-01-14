@@ -37,14 +37,8 @@ class BaseHelper:
         return BaseHelper.driver
     #初始化oppo
     def get_oppo_driver(self):
-        oppo_device_name="a6e29c44"
-        oppo_android_verison="5.1.1"
-        PATH = lambda p:os.path.abspath(os.path.join(os.path.dirname(__file__),p))  # 不写这一句也OK
-        # 红米
-        redmi_device_name=oppo_device_name  #设备名
-        red_andorid_version=oppo_android_verison  #安卓版本
-        oppo_device_name="a6e29c44"
-        oppo_android_verison="5.1.1"
+        oppo_device_name="a6e29c44"   #设备名
+        oppo_android_verison="5.1.1"   #安卓版本
         # oppo  a 57
         # oppoDeviceName="4f712500"  # 设备名
         # oppoAndoridVersion="6.0.1"  # 安卓版本

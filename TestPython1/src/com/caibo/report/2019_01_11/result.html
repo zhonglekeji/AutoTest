@@ -117,20 +117,20 @@ function html_escape(s) {
 <div class='heading'>
 <h4 style="font-family: Microsoft YaHei">彩播app自动化测试报告</h4>
 <p class='attribute'><strong>测试人员 : </strong> 李鹏杰</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-01-11 10:51:34</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:01:02.800909</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 5，通过 3，错误 2，通过率= 60.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-01-11 14:18:34</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:09:21.093071</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 24，通过 24，通过率= 100.00%</p>
 
 <p class='description'>项目描述：Android环境</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 60.00% }</a>
-<a class="btn btn-warning" href='javascript:showCase(4)'>错误{ 2 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-warning" href='javascript:showCase(4)'>错误{ 0 }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 3 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 5 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 24 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 24 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -196,86 +196,679 @@ screenShots 2019_01_11输入正确账号密码-8 .png
 
 
 
-<tr class='errorClass warning'>
-    <td>unittest.loader._FailedTest</td>
-    <td class="text-center">2</td>
+<tr class='passClass warning'>
+    <td>Test_D_MyInfo.Test_MyInfo</td>
+    <td class="text-center">21</td>
+    <td class="text-center">21</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center">2</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',2)" class="detail" id='c2'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',21)" class="detail" id='c2'>详细</a></td>
     <td class="text-center">Assert or Error Image</td>
 </tr>
 
-<tr id='ft2_1' class='none'>
-    <td class='errorCase' width='300px'><div class='testcase'>Test_D_MyInfo</div></td>
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_a</div></td>
     <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
-    <div id='div_ft2_1' class="collapse">  -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
-    <div id='div_ft2_1' class="collapse in">
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in">
     <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
     
-ft2_1: ImportError: Failed to import test module: Test_D_MyInfo
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 434, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 375, in _get_module_from_name
-    __import__(name)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 5, in &lt;module&gt;
-    from com.caibo.business.MyInfoHelper import MyInfoHelper
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 101
-    def get_code_by_mobile(self,mobile="",case_name,second=0):   #实名认证   param:mobile-手机号,case_name-用例名称,second-截图等待秒数
-                          ^
-SyntaxError: non-default argument follows default argument
-
+pt2_1: 执行测试用例：
+去我的个人信息页面-
+screenShots 2019_01_11去我的个人信息页面- .png
+本次测试完成
+本条用例执行通过
 
 
     </pre>
     </div>
     </td>
     <td align="right">
-        <a hidden="hidden" href="">
-            <img   src="" height="200px" width="400px"/>
+        <a  href="../../screenShots/2019_01_11/2019_01_11去我的个人信息页面-.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11去我的个人信息页面-.png" height="200px" width="400px"/>
         </a>
     </td>
 </tr>
 
 
 
-<tr id='ft2_2' class='none'>
-    <td class='errorCase' width='300px'><div class='testcase'>Test_E_CashWithdrawal</div></td>
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_b</div></td>
     <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_2'>错误</button>
-    <div id='div_ft2_2' class="collapse">  -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_2'>错误</button>
-    <div id='div_ft2_2' class="collapse in">
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in">
     <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
     
-ft2_2: ImportError: Failed to import test module: Test_E_CashWithdrawal
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 434, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "/usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/loader.py", line 375, in _get_module_from_name
-    __import__(name)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_E_CashWithdrawal.py", line 5, in &lt;module&gt;
-    from com.caibo.business.MyInfoHelper import MyInfoHelper
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 101
-    def get_code_by_mobile(self,mobile="",case_name,second=0):   #实名认证   param:mobile-手机号,case_name-用例名称,second-截图等待秒数
-                          ^
-SyntaxError: non-default argument follows default argument
-
+pt2_2: 执行测试用例：
+修改为已存在的昵称-
+screenShots 2019_01_11修改为已存在的昵称- .png
+本次测试完成
+本条用例执行通过
 
 
     </pre>
     </div>
     </td>
     <td align="right">
-        <a hidden="hidden" href="">
-            <img   src="" height="200px" width="400px"/>
+        <a  href="../../screenShots/2019_01_11/2019_01_11修改为已存在的昵称-.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11修改为已存在的昵称-.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_c</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_3: 执行测试用例：
+修改为1位的昵称--
+screenShots 2019_01_11修改为1位的昵称-- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11修改为1位的昵称--.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11修改为1位的昵称--.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_4' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_d</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
+    <div id='div_pt2_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
+    <div id='div_pt2_4' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_4: 执行测试用例：
+修改为17位的昵称-
+screenShots 2019_01_11修改为17位的昵称- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11修改为17位的昵称-.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11修改为17位的昵称-.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_5' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_e</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_5: 执行测试用例：
+修改为特殊符号昵称-
+screenShots 2019_01_11修改为特殊符号昵称- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11修改为特殊符号昵称-.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11修改为特殊符号昵称-.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_6' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_f</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_6'>通过</button>
+    <div id='div_pt2_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_6'>通过</button>
+    <div id='div_pt2_6' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_6: 执行测试用例：
+修改为正确格式昵称-
+screenShots 2019_01_11修改为正确格式昵称- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11修改为正确格式昵称-.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11修改为正确格式昵称-.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_7' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_g</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_7'>通过</button>
+    <div id='div_pt2_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_7'>通过</button>
+    <div id='div_pt2_7' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_7: 执行测试用例：
+都不输入点击提交--
+参数：
+name:
+card:
+screenShots 2019_01_11都不输入点击提交-- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11都不输入点击提交--.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11都不输入点击提交--.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_8' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_h</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_8'>通过</button>
+    <div id='div_pt2_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_8'>通过</button>
+    <div id='div_pt2_8' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_8: 执行测试用例：
+姓名输入一位----
+参数：
+name:n
+card:
+screenShots 2019_01_11姓名输入一位---- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11姓名输入一位----.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11姓名输入一位----.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_9' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_i</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_9'>通过</button>
+    <div id='div_pt2_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_9'>通过</button>
+    <div id='div_pt2_9' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_9: 执行测试用例：
+姓名输入七位----
+参数：
+name:adcdefg
+card:
+screenShots 2019_01_11姓名输入七位---- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11姓名输入七位----.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11姓名输入七位----.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_10' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_j</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_10'>通过</button>
+    <div id='div_pt2_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_10'>通过</button>
+    <div id='div_pt2_10' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_10: 执行测试用例：
+姓名输入七位----
+参数：
+name:adcdefg
+card:
+screenShots 2019_01_11姓名输入七位---- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11姓名输入七位----.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11姓名输入七位----.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_11' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_k</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_11'>通过</button>
+    <div id='div_pt2_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_11'>通过</button>
+    <div id='div_pt2_11' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_11: 执行测试用例：
+姓名输入特殊符号--
+参数：
+name:---...///##
+card:
+screenShots 2019_01_11姓名输入特殊符号-- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_12' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_l</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_12'>通过</button>
+    <div id='div_pt2_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_12'>通过</button>
+    <div id='div_pt2_12' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_12: 执行测试用例：
+姓名输入特殊符号--
+参数：
+name:test
+card:1
+screenShots 2019_01_11姓名输入特殊符号-- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_13' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_m</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_13'>通过</button>
+    <div id='div_pt2_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_13'>通过</button>
+    <div id='div_pt2_13' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_13: 执行测试用例：
+姓名输入特殊符号--
+参数：
+name:test
+card:1234567890123456789
+screenShots 2019_01_11姓名输入特殊符号-- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_14' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_n</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_14'>通过</button>
+    <div id='div_pt2_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_14'>通过</button>
+    <div id='div_pt2_14' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_14: 执行测试用例：
+姓名输入特殊符号--
+参数：
+name:test
+card:111111111111111111
+screenShots 2019_01_11姓名输入特殊符号-- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_15' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_o</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_15'>通过</button>
+    <div id='div_pt2_15' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_15' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_15'>通过</button>
+    <div id='div_pt2_15' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_15: 执行测试用例：
+姓名输入特殊符号--
+参数：
+name:test
+card:130424166658920218
+screenShots 2019_01_11姓名输入特殊符号-- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11姓名输入特殊符号--.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_16' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_p</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_16'>通过</button>
+    <div id='div_pt2_16' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_16'>通过</button>
+    <div id='div_pt2_16' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_16: 执行测试用例：
+不输入手机号点击获取
+参数：
+mobile:
+screenShots 2019_01_11不输入手机号点击获取 .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11不输入手机号点击获取.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11不输入手机号点击获取.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_17' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_q</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_17' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_17'>通过</button>
+    <div id='div_pt2_17' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_17' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_17'>通过</button>
+    <div id='div_pt2_17' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_17: 执行测试用例：
+输入1位点击获取--
+参数：
+mobile:1
+screenShots 2019_01_11输入1位点击获取-- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11输入1位点击获取--.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11输入1位点击获取--.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_18' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_r</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_18' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_18'>通过</button>
+    <div id='div_pt2_18' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_18' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_18'>通过</button>
+    <div id='div_pt2_18' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_18: 执行测试用例：
+输入13位点击获取-
+参数：
+mobile:1234567890123
+screenShots 2019_01_11输入13位点击获取- .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11输入13位点击获取-.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11输入13位点击获取-.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_19' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_s</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_19' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_19'>通过</button>
+    <div id='div_pt2_19' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_19' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_19'>通过</button>
+    <div id='div_pt2_19' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_19: 执行测试用例：
+输入12个1点击获取
+参数：
+mobile:1111111111
+screenShots 2019_01_11输入12个1点击获取 .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11输入12个1点击获取.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11输入12个1点击获取.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_20' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_t</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_20' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_20'>通过</button>
+    <div id='div_pt2_20' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_20' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_20'>通过</button>
+    <div id='div_pt2_20' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_20: 执行测试用例：
+输入特殊符号点击获取
+参数：
+mobile:***???//~~
+screenShots 2019_01_11输入特殊符号点击获取 .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11输入特殊符号点击获取.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11输入特殊符号点击获取.png" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_21' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_u</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_21' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_21'>通过</button>
+    <div id='div_pt2_21' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_21' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_21'>通过</button>
+    <div id='div_pt2_21' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_21: 执行测试用例：
+输入正确但非本人号码
+参数：
+mobile:13683052819
+screenShots 2019_01_11输入正确但非本人号码 .png
+本次测试完成
+本条用例执行通过
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a  href="../../screenShots/2019_01_11/2019_01_11输入正确但非本人号码.png">
+            <img   src="../../screenShots/2019_01_11/2019_01_11输入正确但非本人号码.png" height="200px" width="400px"/>
         </a>
     </td>
 </tr>
@@ -354,11 +947,11 @@ screenShots 2019_01_11点击进入顶呱呱直播间 .png
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>5</td>
-    <td>3</td>
+    <td>24</td>
+    <td>24</td>
     <td>0</td>
-    <td>2</td>
-    <td>通过率：60.00%</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
     <td> <a href="" target="_blank"></a></td>
 </tr>
 </table>

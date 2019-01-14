@@ -7,10 +7,18 @@ import cx_Oracle                                          #引用模块cx_Oracle
 
 
 
+try:
+    s = None
+    if s is None:
+        print('s是空对象')
 
-a=1.23
-b=2
-c=a+b
+    print(len(s))
+
+except Exception:
+    print('空对象没有长度')
+    raise NameError
+
+
 
 # conn=cx_Oracle.connect('load/123456@localhost/ora11g')    #连接数据库
 # c=conn.cursor()                                           #获取cursor

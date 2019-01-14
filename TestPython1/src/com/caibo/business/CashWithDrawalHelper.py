@@ -14,9 +14,13 @@ class CashWithDrawalHelper(BaseHelper):
     # 手机号密码为空则不输入
 
     def to_cash_with_drawl(self,case_name):
-        cash_with_drawl_page = CashWithdrawalPage()
-        util=Utils()
-        util.getElementById(CashWithDrawalHelper.driver,cash_with_drawl_page.resid_my_record).click()
-        util.take_screenShot(CashWithDrawalHelper.driver, case_name, 2)
-        util.getElementById(CashWithDrawalHelper.driver,cash_with_drawl_page.resid_back_button).click()
-        print("本次测试完成")
+        try:
+            cash_with_drawl_page = CashWithdrawalPage()
+            util=Utils()
+            util.getElementById(CashWithDrawalHelper.driver,cash_with_drawl_page.resid_my_record).click()
+            util.take_screenShot(CashWithDrawalHelper.driver, case_name, 2)
+            util.getElementById(CashWithDrawalHelper.driver,cash_with_drawl_page.resid_back_button).click()
+        except Exception as e:
+            print("发现异常")
+            print(e)
+            raise SystemError

@@ -38,6 +38,7 @@ class Utils:
         order='adb devices' #创建命令
         pi= subprocess.Popen(order,shell=True,stdout=subprocess.PIPE)
         
+        
     def mkdir(self,path):
         # 去除首位空格
         path=path.strip()
@@ -62,9 +63,10 @@ class Utils:
             print ('%s 目录已存在'%path)
             return False
         
+    
     def getImage(self,driver,name="takeShot",second=0):
         '''
-        截取图片,并保存在images文件夹
+        截取图片,并保存在screenShots文件夹
         :return: 无
         '''
         time.sleep(second)
