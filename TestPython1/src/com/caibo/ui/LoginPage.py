@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from com.caibo.ui.PublicPage import PublicPage
-class LoginPage(PublicPage):
+
+class LoginPage(PublicPage):   #登录页面
     def __init__(self):
         pass
         

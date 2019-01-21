@@ -1,7 +1,18 @@
 # -*- coding: utf-8 -*-
-import datetime,os,unittest
-from com.caibo.api.HTMLTestRunner import HTMLTestRunner
+import datetime,unittest
+import sys
+print(sys.path)
+import os
+os.chdir('/Users/lipengjie/eclipse-workspace/TestPython1')
+for file in os.listdir(os.getcwd()):
+    print(file)
+sys.path.append('/Users/lipengjie/eclipse-workspace/TestPython1')
+sys.path.append('/Users/lipengjie/eclipse-workspace/TestPython1/src')
+sys.path.append('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case')
+sys.path.append('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/api')
 from com.caibo.api.Utils import Utils
+from com.caibo.api.HTMLTestRunner import HTMLTestRunner
+
 case_path=os.getcwd();
 now_time = datetime.datetime.now().strftime('%Y_%m_%d')  #当前日期,每天的报告放在每天的文件夹下
 a = 'hello word'
@@ -18,13 +29,15 @@ def creat_suite():
     uit = unittest.TestSuite()
 
     # 获取所有以test开头.py结尾的测试用例文件
-    discover = unittest.defaultTestLoader.discover(case_path, pattern="Test_*.py", top_level_dir=None)
+    #discover = unittest.defaultTestLoader.discover(case_path, pattern="Test_*.py", top_level_dir=None)
+    discover = unittest.defaultTestLoader.discover('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case', pattern="Test_*.py", top_level_dir=None)
     print(discover)
     # print (discover)
     # 遍历并执行每一个测试用例
     for test_suite in discover:
         for test_case in test_suite:
             uit.addTest(test_case)
+            #print(test_case)
     return uit
 
 
@@ -34,6 +47,7 @@ if __name__ == "__main__":
     fb = open(report_path+'/result.html', 'wb')
     runner = HTMLTestRunner(stream=fb, title=u'彩播app自动化测试报告', description=u'项目描述：Android环境')
     runner.run(suite)
-    fb.close()#岳云鹏的送情郎，陶阳的照花台，张云雷的探清水河
+    fb.close()
+    
     
     

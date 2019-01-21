@@ -1,6 +1,6 @@
 from com.caibo.ui.PublicPage import PublicPage
-#大奖展厅
-class ExhibitionRoom(PublicPage):
+
+class ExhibitionRoom(PublicPage):   #大奖展厅页面
     '''
     classdocs
     '''

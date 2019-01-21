@@ -2,7 +2,6 @@
 from com.caibo.api.Utils import Utils
 from com.caibo.ui.MyInfoPage import MyInfoPage
 from com.caibo.business.BaseHelper import BaseHelper
-from com.caibo.ui.CashWithdrawalPage import CashWithdrawalPage
 from com.caibo.ui.HotAnchorPage import HotAnchorPage
 
 class HotAnchorHelper(BaseHelper):

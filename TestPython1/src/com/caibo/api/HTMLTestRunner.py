@@ -719,7 +719,7 @@ class HTMLTestRunner(Template_mixin):
         if ((uo or ue) and unum !=-1):
             hidde_status = ''
             unum=str(uo).rfind('screenShots')
-            image_url = '../../screenShots/2019_01_14/'+str(uo)[unum+11:unum+34].replace(' ', '')+'png'
+            image_url = '../../screenShots/2019_01_21/'+str(uo)[unum+11:unum+34].replace(' ', '')+'png'
 
         else:
             hidde_status = '''hidden="hidden"'''
@@ -741,7 +741,6 @@ class HTMLTestRunner(Template_mixin):
 
     def _generate_ending(self):
         return self.ENDING_TMPL
-
 
 ##############################################################################
 # Facilities for running tests from the command line
