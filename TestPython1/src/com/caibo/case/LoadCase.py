@@ -1,6 +1,7 @@
 # coding: utf-8
 import datetime,unittest
 import sys
+sys.getdefaultencoding()
 print(sys.path)
 import os
 os.chdir('/Users/lipengjie/eclipse-workspace/TestPython1')
@@ -12,6 +13,10 @@ sys.path.append('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/ca
 sys.path.append('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/api')
 from com.caibo.api.Utils import Utils
 from com.caibo.api.HTMLTestRunner import HTMLTestRunner
+
+
+
+
 
 case_path=os.getcwd();
 now_time = datetime.datetime.now().strftime('%Y_%m_%d')  #当前日期,每天的报告放在每天的文件夹下
