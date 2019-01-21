@@ -1,6 +1,7 @@
 # coding: utf-8
 import datetime,unittest
-import sys
+import sys,io
+from idlelib.iomenu import encoding
 sys.getdefaultencoding()
 print(sys.path)
 import os
@@ -15,9 +16,8 @@ from com.caibo.api.Utils import Utils
 from com.caibo.api.HTMLTestRunner import HTMLTestRunner
 
 
-
-
-
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
 case_path=os.getcwd();
 now_time = datetime.datetime.now().strftime('%Y_%m_%d')  #当前日期,每天的报告放在每天的文件夹下
 a = 'hello word'
@@ -50,6 +50,7 @@ def creat_suite():
 if __name__ == "__main__":
     suite = creat_suite()
     fb = open(r'/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/report/'+now_time+'/result.html', 'wb')
+    #f=open('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/report/2019_01_21/result.html', 'wb',encoding='')
     runner = HTMLTestRunner(stream=fb, title=u'彩播app自动化测试报告', description=u'项目描述：Android环境')
     runner.run(suite)
     fb.close()
