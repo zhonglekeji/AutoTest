@@ -15,8 +15,13 @@ from com.caibo.api.Utils import Utils
 from com.caibo.api.HTMLTestRunner import HTMLTestRunner
 
 
-sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
-sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
+#sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
+#sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
+sys.stdout = sys.__stdout__ = io.TextIOWrapper(
+    sys.stdout.detach(), encoding='utf-8', line_buffering=True)
+sys.stderr = sys.__stderr__ = io.TextIOWrapper(
+    sys.stderr.detach(), encoding='utf-8', line_buffering=True)
+    
 case_path=os.getcwd();
 now_time = datetime.datetime.now().strftime('%Y_%m_%d')  #当前日期,每天的报告放在每天的文件夹下
 a = 'hello word'
