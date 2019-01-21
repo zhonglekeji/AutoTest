@@ -51,6 +51,3 @@ class Test_C_My(unittest.TestCase):
         log = Log()
         log.print_case_info_My(case_name)
         MyHelper.clear_cache_really(self, case_name, 5)
- 
- 
- 

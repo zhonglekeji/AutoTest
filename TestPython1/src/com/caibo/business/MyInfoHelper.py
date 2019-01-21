@@ -58,8 +58,10 @@ class MyInfoHelper(BaseHelper):
             time.sleep(1)
             #util.getElementById(MyInfoHelper.driver,my_info_page.resid_back_button).click()
             #MyInfoHelper.driver.find_element_by_xpath("//*[@resource-id='com.dbljoy.lottery:id/img_goback']").click()
-        except Exception:
-            print("执行中发现了异常")
+        except Exception as e:
+            print("发现异常")
+            print(e)
+            raise SystemError
     def edit_nickname_right(self,nick_name="",case_name="",second=0):   #修改昵称   param:case_name-用例名称,second-截图等待秒数
         try:
             my_info_page = MyInfoPage()

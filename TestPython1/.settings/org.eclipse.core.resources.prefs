@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/com/caibo/api/HTMLTestRunner.py=utf-8
+encoding//src/com/caibo/api/HTMLTestRunner\u7684\u526F\u672C.py=utf-8
 encoding//src/com/caibo/api/Log.py=utf-8
 encoding//src/com/caibo/api/Utils.py=utf-8
 encoding//src/com/caibo/business/BaseHelper.py=utf-8
@@ -12,6 +13,9 @@ encoding//src/com/caibo/case/LoadCase.py=utf-8
 encoding//src/com/caibo/case/Test_A_Login.py=utf-8
 encoding//src/com/caibo/case/Test_B_My.py=utf-8
 encoding//src/com/caibo/case/Test_C_My.py=utf-8
+encoding//src/com/caibo/case/Test_D_MyInfo.py=utf-8
+encoding//src/com/caibo/case/Test_E_CashWithdrawal.py=utf-8
+encoding//src/com/caibo/case/Test_F_HotAnchor.py=utf-8
 encoding//src/com/caibo/ui/HotAnchorPage.py=utf-8
 encoding//src/com/caibo/ui/LoginPage.py=utf-8
 encoding//src/com/caibo/ui/MyInfoPage.py=utf-8

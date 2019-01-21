@@ -1,7 +1,3 @@
-import datetime
-import os
-import random
-import cx_Oracle                                          #引用模块cx_Oracle
 
 
 

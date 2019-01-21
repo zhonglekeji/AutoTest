@@ -1,4 +1,4 @@
-import time
+# -*- coding: utf-8 -*-
 import unittest
 from com.caibo.api.Log import Log
 from com.caibo.business.HotAnchorHelper import HotAnchorHelper

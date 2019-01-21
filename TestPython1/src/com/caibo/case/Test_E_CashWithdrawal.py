@@ -1,8 +1,6 @@
-import time
+# -*- coding: utf-8 -*-
 import unittest
 from com.caibo.api.Log import Log
-from com.caibo.business.MyHelper import MyHelper
-from com.caibo.business.MyInfoHelper import MyInfoHelper
 from com.caibo.business.CashWithDrawalHelper import CashWithDrawalHelper
 
 #财务记录

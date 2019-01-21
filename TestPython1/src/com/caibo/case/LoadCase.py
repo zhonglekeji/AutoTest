@@ -1,8 +1,6 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 import datetime,unittest
-import sys,io
-sys.getdefaultencoding()
-print(sys.path)
+import sys
 import os
 os.chdir('/Users/lipengjie/eclipse-workspace/TestPython1')
 for file in os.listdir(os.getcwd()):
@@ -17,10 +15,6 @@ from com.caibo.api.HTMLTestRunner import HTMLTestRunner
 
 #sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
 #sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
-sys.stdout = sys.__stdout__ = io.TextIOWrapper(
-    sys.stdout.detach(), encoding='utf-8', line_buffering=True)
-sys.stderr = sys.__stderr__ = io.TextIOWrapper(
-    sys.stderr.detach(), encoding='utf-8', line_buffering=True)
     
 case_path=os.getcwd();
 now_time = datetime.datetime.now().strftime('%Y_%m_%d')  #当前日期,每天的报告放在每天的文件夹下
@@ -53,9 +47,9 @@ def creat_suite():
 # 执行测试
 if __name__ == "__main__":
     suite = creat_suite()
-    fb = open(r'/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/report/'+now_time+'/result.html', 'wb')
+    fb = open('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/report/'+now_time+'/result.html', 'wb')
     #f=open('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/report/2019_01_21/result.html', 'wb',encoding='')
-    runner = HTMLTestRunner(stream=fb, title=u'彩播app自动化测试报告', description=u'项目描述：Android环境')
+    runner = HTMLTestRunner(stream=fb, title='caibo_test_report', description='paltfrom:Android')
     runner.run(suite)
     fb.close()
     

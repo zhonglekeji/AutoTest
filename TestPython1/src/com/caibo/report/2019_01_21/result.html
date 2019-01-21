@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>彩播app自动化测试报告</title>
+    <title>caibo_test_report</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2.1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -115,21 +115,21 @@ function html_escape(s) {
 }
 </script>
 <div class='heading'>
-<h4 style="font-family: Microsoft YaHei">彩播app自动化测试报告</h4>
+<h4 style="font-family: Microsoft YaHei">caibo_test_report</h4>
 <p class='attribute'><strong>测试人员 : </strong> 李鹏杰</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-01-21 15:07:49</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:25.060251</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 42，通过 4，错误 38，通过率= 9.52%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-01-21 16:22:21</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:25.078715</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 42，错误 42，通过率= 0.00%</p>
 
-<p class='description'>项目描述：Android环境</p>
+<p class='description'>paltfrom:Android</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 9.52% }</a>
-<a class="btn btn-warning" href='javascript:showCase(4)'>错误{ 38 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 0.00% }</a>
+<a class="btn btn-warning" href='javascript:showCase(4)'>错误{ 42 }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 4 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 0 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 42 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -180,7 +180,7 @@ mobile:11111111111
 pwd:
 driver_stat=1,初始化driver
 发现异常
-HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x11018b0b8&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c0427f0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/urllib3/connection.py", line 159, in _new_conn
     (self._dns_host, self.port), self.timeout, **extra_kw)
@@ -211,7 +211,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "/usr/local/lib/python3.7/site-packages/urllib3/connection.py", line 168, in _new_conn
     self, "Failed to establish a new connection: %s" % e)
-urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x11018b0b8&gt;: Failed to establish a new connection: [Errno 61] Connection refused
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x10c0427f0&gt;: Failed to establish a new connection: [Errno 61] Connection refused
 
 During handling of the above exception, another exception occurred:
 
@@ -248,7 +248,7 @@ Traceback (most recent call last):
     _stacktrace=sys.exc_info()[2])
   File "/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py", line 398, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x11018b0b8&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x10c0427f0&gt;: Failed to establish a new connection: [Errno 61] Connection refused'))
 
 During handling of the above exception, another exception occurred:
 
@@ -904,9 +904,9 @@ SystemError
 <tr class='errorClass warning'>
     <td>Test_D_MyInfo.Test_MyInfo</td>
     <td class="text-center">24</td>
-    <td class="text-center">4</td>
     <td class="text-center">0</td>
-    <td class="text-center">20</td>
+    <td class="text-center">0</td>
+    <td class="text-center">24</td>
     <td class="text-center"><a href="javascript:showClassDetail('c4',24)" class="detail" id='c4'>详细</a></td>
     <td class="text-center">Assert or Error Image</td>
 </tr>
@@ -930,16 +930,16 @@ card:130424166658920218
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 151, in test_myinfo16
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 150, in test_myinfo16
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 0)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -979,7 +979,7 @@ AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 20, in test_myinfo_a
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 19, in test_myinfo_a
     MyInfoHelper.to_my_info(self,case_name,2)
   File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 28, in to_my_info
     raise SystemError
@@ -998,21 +998,34 @@ SystemError
 
 
 
-<tr id='pt4_3' class='hiddenRow'>
-    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_b</div></td>
+<tr id='ft4_3' class='none'>
+    <td class='errorCase' width='300px'><div class='testcase'>test_myinfo_b</div></td>
     <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
-    <div id='div_pt4_3' class="collapse">  -->
+    <button id='btn_ft4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_3'>错误</button>
+    <div id='div_ft4_3' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
-    <div id='div_pt4_3' class="collapse in">
+    <button id='btn_ft4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_3'>错误</button>
+    <div id='div_ft4_3' class="collapse in">
     <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
     
-pt4_3: 执行测试用例：
+ft4_3: 执行测试用例：
 修改为已存在的昵称-
-执行中发现了异常
-本条用例执行通过
+发现异常
+type object 'MyInfoHelper' has no attribute 'driver'
+Traceback (most recent call last):
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 35, in edit_nickname_error
+    util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
+AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 27, in test_myinfo_b
+    MyInfoHelper.edit_nickname_error(self,"",case_name,0)
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 64, in edit_nickname_error
+    raise SystemError
+SystemError
 
 
     </pre>
@@ -1027,21 +1040,34 @@ pt4_3: 执行测试用例：
 
 
 
-<tr id='pt4_4' class='hiddenRow'>
-    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_c</div></td>
+<tr id='ft4_4' class='none'>
+    <td class='errorCase' width='300px'><div class='testcase'>test_myinfo_c</div></td>
     <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_4'>通过</button>
-    <div id='div_pt4_4' class="collapse">  -->
+    <button id='btn_ft4_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_4'>错误</button>
+    <div id='div_ft4_4' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_4'>通过</button>
-    <div id='div_pt4_4' class="collapse in">
+    <button id='btn_ft4_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_4'>错误</button>
+    <div id='div_ft4_4' class="collapse in">
     <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
     
-pt4_4: 执行测试用例：
+ft4_4: 执行测试用例：
 修改为1位的昵称--
-执行中发现了异常
-本条用例执行通过
+发现异常
+type object 'MyInfoHelper' has no attribute 'driver'
+Traceback (most recent call last):
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 35, in edit_nickname_error
+    util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
+AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 35, in test_myinfo_c
+    MyInfoHelper.edit_nickname_error(self,"n",case_name,0)
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 64, in edit_nickname_error
+    raise SystemError
+SystemError
 
 
     </pre>
@@ -1056,21 +1082,34 @@ pt4_4: 执行测试用例：
 
 
 
-<tr id='pt4_5' class='hiddenRow'>
-    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_d</div></td>
+<tr id='ft4_5' class='none'>
+    <td class='errorCase' width='300px'><div class='testcase'>test_myinfo_d</div></td>
     <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_5'>通过</button>
-    <div id='div_pt4_5' class="collapse">  -->
+    <button id='btn_ft4_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_5'>错误</button>
+    <div id='div_ft4_5' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_5'>通过</button>
-    <div id='div_pt4_5' class="collapse in">
+    <button id='btn_ft4_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_5'>错误</button>
+    <div id='div_ft4_5' class="collapse in">
     <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
     
-pt4_5: 执行测试用例：
+ft4_5: 执行测试用例：
 修改为17位的昵称-
-执行中发现了异常
-本条用例执行通过
+发现异常
+type object 'MyInfoHelper' has no attribute 'driver'
+Traceback (most recent call last):
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 35, in edit_nickname_error
+    util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
+AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 43, in test_myinfo_d
+    MyInfoHelper.edit_nickname_error(self,"零一二三四五六七八九一二三四五六七",case_name,0)
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 64, in edit_nickname_error
+    raise SystemError
+SystemError
 
 
     </pre>
@@ -1085,21 +1124,34 @@ pt4_5: 执行测试用例：
 
 
 
-<tr id='pt4_6' class='hiddenRow'>
-    <td class='passCase' width='300px'><div class='testcase'>test_myinfo_e</div></td>
+<tr id='ft4_6' class='none'>
+    <td class='errorCase' width='300px'><div class='testcase'>test_myinfo_e</div></td>
     <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_6'>通过</button>
-    <div id='div_pt4_6' class="collapse">  -->
+    <button id='btn_ft4_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_6'>错误</button>
+    <div id='div_ft4_6' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_6'>通过</button>
-    <div id='div_pt4_6' class="collapse in">
+    <button id='btn_ft4_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_6'>错误</button>
+    <div id='div_ft4_6' class="collapse in">
     <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
     
-pt4_6: 执行测试用例：
+ft4_6: 执行测试用例：
 修改为特殊符号昵称-
-执行中发现了异常
-本条用例执行通过
+发现异常
+type object 'MyInfoHelper' has no attribute 'driver'
+Traceback (most recent call last):
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 35, in edit_nickname_error
+    util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
+AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 51, in test_myinfo_e
+    MyInfoHelper.edit_nickname_error(self,"...)(&amp;^&gt;&lt;?",case_name,0)
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 64, in edit_nickname_error
+    raise SystemError
+SystemError
 
 
     </pre>
@@ -1130,16 +1182,16 @@ ft4_7: 执行测试用例：
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 67, in edit_nickname_right
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 69, in edit_nickname_right
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 59, in test_myinfo_f
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 58, in test_myinfo_f
     MyInfoHelper.edit_nickname_right(self,Utils.creat_username(self),case_name,0) #使用随机数生成昵称避免重复(9位)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 83, in edit_nickname_right
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 85, in edit_nickname_right
     raise SystemError
 SystemError
 
@@ -1175,16 +1227,16 @@ card:
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 70, in test_myinfo_g
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 69, in test_myinfo_g
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 0)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1220,16 +1272,16 @@ card:
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 79, in test_myinfo_h
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 78, in test_myinfo_h
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 0)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1265,16 +1317,16 @@ card:
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 88, in test_myinfo_i
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 87, in test_myinfo_i
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 0)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1310,16 +1362,16 @@ card:
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 97, in test_myinfo_j
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 96, in test_myinfo_j
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 0)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1355,16 +1407,16 @@ card:
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 106, in test_myinfo_k
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 105, in test_myinfo_k
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 0)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1400,16 +1452,16 @@ card:1
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 115, in test_myinfo_l
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 114, in test_myinfo_l
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1445,16 +1497,16 @@ card:1234567890123456789
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 124, in test_myinfo_m
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 123, in test_myinfo_m
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1490,16 +1542,16 @@ card:111111111111111111
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 133, in test_myinfo_n
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 132, in test_myinfo_n
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1535,16 +1587,16 @@ card:130424166658920218
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 89, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 91, in identity_relname
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 142, in test_myinfo_o
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 141, in test_myinfo_o
     MyInfoHelper.identity_relname(self, rel_name, rel_card, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 115, in identity_relname
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 117, in identity_relname
     raise SystemError
 SystemError
 
@@ -1579,16 +1631,16 @@ mobile:
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 121, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 123, in get_code_by_mobile
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 160, in test_myinfo_p
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 159, in test_myinfo_p
     MyInfoHelper.get_code_by_mobile(self, mobile, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 137, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 139, in get_code_by_mobile
     raise SystemError
 SystemError
 
@@ -1623,16 +1675,16 @@ mobile:1
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 121, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 123, in get_code_by_mobile
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 169, in test_myinfo_q
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 168, in test_myinfo_q
     MyInfoHelper.get_code_by_mobile(self, mobile, case_name, 0)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 137, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 139, in get_code_by_mobile
     raise SystemError
 SystemError
 
@@ -1667,16 +1719,16 @@ mobile:1234567890123
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 121, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 123, in get_code_by_mobile
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 177, in test_myinfo_r
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 176, in test_myinfo_r
     MyInfoHelper.get_code_by_mobile(self, mobile, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 137, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 139, in get_code_by_mobile
     raise SystemError
 SystemError
 
@@ -1711,16 +1763,16 @@ mobile:1111111111
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 121, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 123, in get_code_by_mobile
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 186, in test_myinfo_s
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 185, in test_myinfo_s
     MyInfoHelper.get_code_by_mobile(self, mobile, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 137, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 139, in get_code_by_mobile
     raise SystemError
 SystemError
 
@@ -1755,16 +1807,16 @@ mobile:***???//~~
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 121, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 123, in get_code_by_mobile
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 194, in test_myinfo_t
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 193, in test_myinfo_t
     MyInfoHelper.get_code_by_mobile(self, mobile, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 137, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 139, in get_code_by_mobile
     raise SystemError
 SystemError
 
@@ -1799,16 +1851,16 @@ mobile:13683052819
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 121, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 123, in get_code_by_mobile
     util.getElementById(MyInfoHelper.driver,my_info_page.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 202, in test_myinfo_u
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 201, in test_myinfo_u
     MyInfoHelper.get_code_by_mobile(self, mobile, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 137, in get_code_by_mobile
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 139, in get_code_by_mobile
     raise SystemError
 SystemError
 
@@ -1840,16 +1892,16 @@ ft4_23: 退出登录点击取消--
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 142, in exit
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 144, in exit
     Utils.getElementById(self,MyInfoHelper.driver,MyInfoPage.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 210, in test_myinfo_v
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 209, in test_myinfo_v
     MyInfoHelper.exit(self, 0, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 160, in exit
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 162, in exit
     raise SystemError
 SystemError
 
@@ -1881,16 +1933,16 @@ ft4_24: 退出登录点击确认--
 发现异常
 type object 'MyInfoHelper' has no attribute 'driver'
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 142, in exit
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 144, in exit
     Utils.getElementById(self,MyInfoHelper.driver,MyInfoPage.resid_my_button).click()
 AttributeError: type object 'MyInfoHelper' has no attribute 'driver'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 216, in test_myinfo_w
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_D_MyInfo.py", line 215, in test_myinfo_w
     MyInfoHelper.exit(self, 1, case_name, 1)
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 160, in exit
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/MyInfoHelper.py", line 162, in exit
     raise SystemError
 SystemError
 
@@ -1940,7 +1992,7 @@ AttributeError: type object 'CashWithDrawalHelper' has no attribute 'driver'
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_E_CashWithdrawal.py", line 20, in test_myinfo1
+  File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/case/Test_E_CashWithdrawal.py", line 18, in test_myinfo1
     CashWithDrawalHelper.to_cash_with_drawl(self, case_name)
   File "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/business/CashWithDrawalHelper.py", line 25, in to_cash_with_drawl
     raise SystemError
@@ -2056,10 +2108,10 @@ SystemError
 <tr id='total_row' class="text-center active">
     <td>总计</td>
     <td>42</td>
-    <td>4</td>
     <td>0</td>
-    <td>38</td>
-    <td>通过率：9.52%</td>
+    <td>0</td>
+    <td>42</td>
+    <td>通过率：0.00%</td>
     <td> <a href="" target="_blank"></a></td>
 </tr>
 </table>
