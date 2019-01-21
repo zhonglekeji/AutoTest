@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 import datetime,unittest
 import sys
 print(sys.path)
@@ -44,7 +44,7 @@ def creat_suite():
 # 执行测试
 if __name__ == "__main__":
     suite = creat_suite()
-    fb = open('/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/report/'+now_time+'/result.html', 'wb')
+    fb = open(r'/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/report/'+now_time+'/result.html', 'wb')
     runner = HTMLTestRunner(stream=fb, title=u'彩播app自动化测试报告', description=u'项目描述：Android环境')
     runner.run(suite)
     fb.close()
