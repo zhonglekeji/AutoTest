@@ -1,7 +1,6 @@
 # coding: utf-8
 import datetime,unittest
 import sys,io
-from idlelib.iomenu import encoding
 sys.getdefaultencoding()
 print(sys.path)
 import os
