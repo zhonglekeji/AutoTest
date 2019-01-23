@@ -22,10 +22,10 @@ a = 'hello word'
 b = a.replace('word','python')
 temp_report_path=os.getcwd()
 temp2_report_path=temp_report_path.replace('case','')
-report_path = temp2_report_path+"report"+"/"+now_time # 存放报告路径
+report_path = "/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/report/"+now_time # 存放报告路径
 utils = Utils()
 utils.mkdir(report_path)  #创建测试报告目录
-utils.mkdir(temp2_report_path+"screenShots"+"/"+now_time)  #创建截图目录
+utils.mkdir("/Users/lipengjie/eclipse-workspace/TestPython1/src/com/caibo/screenShots/"+now_time)  #创建截图目录
 
 
 def creat_suite():
